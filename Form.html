@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+
+        .wrapper{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+        }
+
+        form{
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .heading{
+            text-align: center;
+            font-weight: 100;
+            font-size: 30px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 10px 0;
+        }
+
+        .input-box{
+            padding: 10px;
+        }
+
+        input,textarea{
+            width: 400px;
+            height: 40px;
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        textarea{
+            padding: 10px 10px;
+            height: 160px;
+            resize: none;
+        }
+
+        input::placeholder,
+        textarea::placeholder{
+            color: #000;
+        }
+
+        .btn-box{
+            text-align: center;
+        }
+
+        button{
+            padding: 10px 40px;
+            border: none;
+            background: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all .3s ease-in-out;
+        }
+
+        button:hover{
+            box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+        }
+
+        .credit{
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+    <form action="">
+        <div class="heading">
+            <h2>Form</h2>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Your Name">
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="Your Email">
+        </div>
+        <div class="input-box">
+            <input type="numeric" placeholder="Your Phone">
+        </div>
+        <div class="input-box">
+            <input type="date">
+        </div>
+        <div class="input-box">
+            <textarea placeholder="Your Message"></textarea>
+        </div>
+        <div class="btn-box">
+            <button>Submit</button>
+        </div>
+    </form>
+    <div class="credit">
+        <p>Made With ❤️ By Ditin Agrawal</p>
+    </div>
+   </div> 
+</body>
+</html>
